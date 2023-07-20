@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC_Aptech.Models;
 using MVC_Aptech.Models.DTOs;
-using MVC_Aptech.Repository;
+using MVC_Aptech.Repositories;
 using MVC_Aptech.Services;
 using System.Security.Cryptography;
 using System.Text;

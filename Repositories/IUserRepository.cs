@@ -1,6 +1,6 @@
 ﻿using MVC_Aptech.Models;
 
-namespace MVC_Aptech.Repository
+namespace MVC_Aptech.Repositories
 {
     public interface IUserRepository
     {

@@ -1,5 +1,5 @@
 ﻿using MVC_Aptech.Models;
-using MVC_Aptech.Repository;
+using MVC_Aptech.Repositories;
 using MVC_Aptech.Models.DTOs;
 
 namespace MVC_Aptech.Services

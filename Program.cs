@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MVC_Aptech.Models;
-using MVC_Aptech.Repository;
+using MVC_Aptech.Repositories;
 using MVC_Aptech.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +15,15 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // Register Service
 builder.Services.AddScoped<IUserService, UserService>();
+
+// Register Repository
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+// Register Service
+builder.Services.AddScoped<IProductService, ProductService>();
+
+//environment variable            
+builder.Services.Configure<MVC_Aptech.Utilities.Environments>(builder.Configuration?.GetSection("Environments"));
 
 var app = builder.Build();
 
